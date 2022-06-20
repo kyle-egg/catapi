@@ -1,8 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import { FadeInLeftDiv, FadeInRightDiv, FadeInUpDiv } from './Cats'
-
+import { FadeInLeftDiv, FadeInRightDiv } from './Cats'
 
 
 function CatProfile() {
@@ -21,6 +20,7 @@ function CatProfile() {
     getData()
     
   }, [catId])
+
 
 
   return (
@@ -50,13 +50,7 @@ function CatProfile() {
                     <p className="catattributes">{cat.temperament}</p>
                   </FadeInRightDiv>
                 </div>
-                <section className="section" id="profilecontent">
-                  <FadeInUpDiv>
-                    <div className="card">
-                      <p>Bottom Table</p>
-                    </div>
-                  </FadeInUpDiv>
-                </section></>
+                </>
         }
       </div>
     </section>
